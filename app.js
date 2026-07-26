@@ -38,6 +38,7 @@ const appTimer = () => {
   } else {
     alert("Session has already started.");
   }
+  state = false;
 };
 
 startBtn.addEventListener("click", appTimer);
