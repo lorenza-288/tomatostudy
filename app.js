@@ -32,13 +32,14 @@ const appTimer = () => {
       if (minutesLeft === 0 && secondsLeft === 0) {
         ringtone.play();
         clearInterval(myInterval); // stops updating
+          state = true;
       }
     };
     myInterval = setInterval(updateSeconds, 1000); // updates every second
   } else {
     alert("Session has already started.");
   }
-  state = false;
+
 };
 
 startBtn.addEventListener("click", appTimer);
