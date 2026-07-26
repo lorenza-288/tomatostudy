@@ -9,7 +9,7 @@ body {
   color: #a96be8;
   height: 100vh;
   width: 100vw;
-  background-image: url("../background.png");
+  background-image: url("background.png");
   background-size: cover;
   overflow: hidden;
   display: grid;
