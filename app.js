@@ -1,5 +1,5 @@
-const ringtone = new Audio("../ringtone.wav");
-const click = new Audio("../click.wav");
+const ringtone = new Audio("ringtone.wav");
+const click = new Audio("click.wav");
 const startBtn = document.querySelector(".btn-start"); //get button
 const session = document.querySelector(".minutes"); // get minutes
 let myInterval;
