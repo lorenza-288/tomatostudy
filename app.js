@@ -4,10 +4,11 @@ const startBtn = document.querySelector(".btn-start"); //get button
 const session = document.querySelector(".minutes"); // get minutes
 let myInterval;
 let state = true; // true = session not started, false = session started
+const sessionAmount = Number.parseInt(session.textContent);
 
 const appTimer = () => {
   click.play();
-  const sessionAmount = Number.parseInt(session.textContent); // takes text minutes and converts in number
+  
 
   if (state === true) {
     state = false; // deactivates button after first click
@@ -33,6 +34,7 @@ const appTimer = () => {
         ringtone.play();
         clearInterval(myInterval); // stops updating
           state = true;
+        
       }
     };
     myInterval = setInterval(updateSeconds, 1000); // updates every second
